@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Phân Loại!</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="static/scripts/index.js" defer></script>
+</head>
+<body style="background-color:#F5F5F5">
+
+<div id="maintext" style="position:absolute; margin:auto; width:700px; height:200px; text-align:center; top:0; bottom: 0; left: 0; right: 0;">  
+    <img src="https://tuoitre.uit.edu.vn/wp-content/uploads/2015/07/logo-uit.png" alt="Logo-UIT" width="150" height="150"> 
+  <h1>    </h1>
+    <h1 class="text-dark mb-2"> Phân biệt các toà nhà trong trường UIT </h1>
+    <img src="https://drive.google.com/uc?id=1qnduJkAceIySfhMyQPpASNJxG8Ma6vfg" alt="Example" width="400" height="200"> 
+	<h2 class="text-dark mb-2"> Tải ảnh mà bạn muốn dự đoán! </h2>	
+	<form method=post enctype=multipart/form-data id="upload-img" action="{{ url_for('prediction') }}">	
+		<p class="text-dark">
+            <input type="file" id="input-img" name="img" accept="image/*"/>
+            <input type="submit" id="input-img-submit" value="Upload">
+		</p>
+        <input type="text" id="input-img-data" name="img-data" hidden="true">
+	</form>
+</div>
+
+</body>
+</html>
+

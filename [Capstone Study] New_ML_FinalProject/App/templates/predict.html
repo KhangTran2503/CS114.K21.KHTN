@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+	<title>Dự Đoán!</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body style="background-color:#F5F5F5"><div id="maintext" style="position:absolute; margin:auto; width:700px; height:300px; text-align:center; top:0; bottom: 0; left: 0; right: 0;">
+	<h1 class="text-dark mb-5"> Dự đoán! </h1>
+	<p class="text-dark"> </p>
+    
+	<div class="results">
+    {% if prediction %}
+        <div id="response-container">
+            <!-- <img id="response_img" src="{{url_for('static', filename='image/new_image')}}" alt="apple broken"> -->
+        </div>
+    {% endif %}
+	{% if prediction == 1 %}
+	<h2 style="color:black;">Đây là tòa nhà B</h2>
+	{% elif prediction == 2 %}
+	<h2 style="color:black;">Đây là tòa nhà C</h2>
+	{% elif prediction == 3 %}
+	<h2 style="color:black;">Đây là tòa nhà D</h2>
+	{% elif prediction == 4 %}
+	<h2 style="color:black;">Đây là tòa nhà E</h2>
+	{% elif prediction == 5 %}
+	<h2 style="color:back;">Đây là Căn Tin </h2>
+	{% endif %}
+	</div>
+	<a href="/">
+	<input type="submit" value="Go Back..">
+    </a>
+    
+    <script defer>
+        if(document.querySelector('#response-container')){
+          var img = document.createElement('img');
+          img.id = "response-img";
+          img.alt = "response image";
+          img.src = `static/image/new_image?${performance.now()}`;
+          img.height = 430;
+          img.width = 360
+          var response_container = document.querySelector('#response-container');
+          response_container.insertBefore(img, response_container.childNodes[0]);
+        }
+    </script>
+</body>
+</html>
+
+
+
+	
