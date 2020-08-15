@@ -1,11 +1,11 @@
 # CS114.K21.KHTN
 
 ## Student info
-> Full name  : Tran Dinh Khang
+> **Full name  : Tran Dinh Khang**
 >
-> ID' student: 18520072
+> **ID' student: 18520072**
 >
-> Class      : CS114.K21.KHTN
+> **Class      : CS114.K21.KHTN**
 >
 > <img src=18520072.27-04-2020.jpg width=200 height=200/>
 
