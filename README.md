@@ -16,7 +16,7 @@
 
 - [LAB-05: Use API's Kaggle](Copy_of_Kaggle_API.ipynb)
 
-- [LAB-06: Your fist machine learning project](Lab06_Your_First_Machine_Learning_Project.ipynb)
+- [LAB-06: Your Fist Machine Learning Project](Lab06_Your_First_Machine_Learning_Project.ipynb)
 
 - [LAB-07: Predicting House Prices](18520072_LAB7.ipynb)
 
