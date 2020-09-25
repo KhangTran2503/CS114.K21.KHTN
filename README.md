@@ -1,4 +1,4 @@
-# CS114.K21.KHTN
+# CS114.K21.KHTN: Machine Learning
 
 ## Student info
 > **Full name  : Tran Dinh Khang**
